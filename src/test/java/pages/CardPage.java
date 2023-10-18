@@ -8,6 +8,8 @@ import java.time.Duration;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$x;
+import org.openqa.selenium.internal.HasIdentity;
+import org.openqa.selenium.internal.WrapsElement;
 
 public class CardPage {
     SelenideElement cardNumber = $x("//*[contains(text(), 'Номер карты')]/../*/input");

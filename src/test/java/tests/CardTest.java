@@ -27,6 +27,7 @@ public class CardTest {
 
     @BeforeEach
     void setup() {
+        System.setProperty("webdriver.chrome.driver", "C:\\1\\chromedriver.exe");
         SqlHelper.prepareDb();
         open("http://localhost:8080");
         tour = new DescriptionPage();
